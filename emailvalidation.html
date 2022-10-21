@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailValidation</title>
+    <style>
+        .prompt{
+            font-family: verdana;
+            font-weight: bold;
+            color: #8b6952;
+            background-color: #d3c75e;
+            font-size: 18pt;
+        }
+        body {
+            background-color: #db4347;
+        }
+        label {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center> <p><p>
+        <div class="prompt">
+            <script>
+                function m1(){
+                    var p = /^[a-zA-Z0-9._] +\@[a-zA-Z]+\.[a-zA-Z]{2,3}$/;
+                    var q = document.getElementById("t1").value;
+                    if (!q.match(p)){
+                        alert("Please enter a valid e-mail");
+                    }
+                    else{
+                        document.write(q);
+                    }
+                }
+                
+
+            </script>
+        </div>
+        <div>
+            <label for="ID">Enter your valid e-mail</label>
+        </div>
+        <br>
+        <div>
+            <input type="text" id="t1" placeholder="ex: abc@email.com">
+        </div>
+        <br>
+        <div>
+            <button onclick="m1()">Check</button>
+        </div>
+        <br>
+       <!--
+        <div>
+            <input type="text" id="t2">
+        </div>
+       --> 
+
+
+
+
+
+</body>
+</html>
