@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <title> Prime Number</title>
+  <script>
+
+    function isPrime(m1) {
+      var x = parseInt(document.getElementById(t1).value)
+    
+    if (x == 2) {
+      return true;
+    } else if (x > 1) {
+      for (var i = 2; i < x; i++) {
+    
+        if (x % i !== 0) {
+          return true;
+        } else if (x === i * i) {
+          return false
+        } else {
+          return false;
+        }
+      }
+    } else {
+      return false;
+    }
+    document.write = (x "is a Prime Number" );
+    }
+    
+    
+    
+    
+    </script>
+<body>
+
+
+<input type="text" id="t1"/>
+<button onclick="m1()">Check</button>
+</body>
+</html>

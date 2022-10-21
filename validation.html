@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <script>
+        
+        function m1() {
+            var x = document.getElementById("t1").value;
+            if(x.length==0){
+                alert("Enter a Value")
+            } else {
+                document.getElementById("t2").value=x;
+            }
+            
+        } 
+    </script>
+</head>
+<body>
+    <input type="text" id="t1">
+    <br> <br>
+    <button onclick="m1()">
+        Click
+    </button>
+    <br> <br>
+    <textarea id="t2"></textarea>
+</body>
+</html>

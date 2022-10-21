@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        .prompt{
+            font-family: verdana;
+            font-weight: bold;
+            color: #8b6952;
+            background-color: #d3c75e;
+            font-size: 18pt;
+        }
+        body {
+            background-color: #db4347;
+        }
+        label {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center> <p><p>
+        <div class="prompt">
+            <script>
+                function m1() {
+                    var p1 = /^[0-9]{6,7}$/;
+                    var y = "Your ID is incorrect";
+                    var z = ("Your ID is Correct ");
+                //var x = prompt("Enter your ID" , "Enter your ID");
+                var x = document.getElementById("t1").value;
+                if (!x.match(p1)){
+                    //alert("Your ID is incorrect");
+                    document.getElementById("t2").value=y;
+                }  else {
+                    //document.write("Your ID is " + x)}
+                    document.getElementById("t2").value=z;
+                }
+                }
+            </script>
+        </div>
+        <div>
+            <label for="ID">Enter your ID</label>
+        </div>
+        <br>
+        <div>
+            <input type="text" id="t1">
+        </div>
+        <br>
+        <div>
+            <button onclick="m1()">Check</button>
+        </div>
+        <br>
+        <div>
+            <input type="text" id="t2">
+        </div>
+
+
+
+
+
+</body>
+</html>
